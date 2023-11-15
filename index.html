@@ -1,49 +1,444 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Meu Site</title>
-    <link rel="stylesheet" href="estilo.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Atividade</title>
 </head>
 <body>
-    <div>
-        <h1>Listas</h1>
-        <button onclick="resetarCores()">Resetar Cores</button>
-    </div>
-    
-    <div>
-        <label>Nomes:</label>
-        <ul id="listaPessoas">
-            <li>BIA</li>
-            <li>Cassandra</li>
-            <li>José</li>
-            <li>Ana</li>
-            <li>Carlos</li>
-        </ul>
-    </div>
-    <div>
-        <label>Filmes:</label>
-        <ul id="listaFilmes">
-            <li>Titanic</li>
-            <li>LOKI</li>
-            <li>Matrix</li>
-            <li>Matrix</li>
-            <li>Inception</li>
-            <li>Interstellar</li>
-        </ul>
-    </div>
-    <div>
-        <label>Linguagens:</label>
-        <ul id="listaLinguagens">
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>Java</li>
-            <li>C#</li>
-            <li>Ruby</li>
-            <li>COBOL</li>
-        </ul>
-    </div>
-    
-    <script src="script.js"></script>
-
-</body>
+  <l>
+<pre><font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/UNIFIL</b></font>$ ls
+  index.html  script.js  style.css
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/UNIFIL</b></font>$ git init
+  Repositório vazio Git inicializado em  /home/pablo/Documentos/Atividade/UNIFIL/.git/
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/UNIFIL</b></font>$ git remote add origin git@github.com:PablUoo/PablUoo-Atividade2_Marcelo-Yamamoto.git
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/UNIFIL</b></font>$ git add .
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/UNIFIL</b></font>$ git commit -m &quot;first&quot;
+  [main (root-commit) 59fa1ae] first
+   3 files changed, 97 insertions(+)
+   create mode 100644 index.html
+   create mode 100644 script.js
+   create mode 100644 style.css
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/UNIFIL</b></font>$ git branch -M main
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/UNIFIL</b></font>$ git push -u origin main
+  Enumerating objects: 5, done.
+  Counting objects: 100% (5/5), done.
+  Delta compression using up to 4 threads
+  Compressing objects: 100% (5/5), done.
+  Writing objects: 100% (5/5), 1.10 KiB | 1.10 MiB/s, done.
+  Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+  To github.com:PablUoo/PablUoo-Atividade2_Marcelo-Yamamoto.git
+   * [new branch]      main -&gt; main
+  Branch &apos;main&apos; set up to track remote branch &apos;main&apos; from &apos;origin&apos;.
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/UNIFIL</b></font>$ git log
+  <font color="#C4A000">commit 59fa1ae307fcd167dedd5dbb2dbfe6f34bc3c8ef (</font><font color="#34E2E2"><b>HEAD -&gt; </b></font><font color="#8AE234"><b>main</b></font><font color="#C4A000">, </font><font color="#EF2929"><b>origin/main</b></font><font color="#C4A000">)</font>
+  Author: PablUoo &lt;pabloaurelio1163@gmail.com&gt;
+  Date:   Wed Nov 15 16:23:21 2023 -0300
+  
+      first
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/UNIFIL</b></font>$ git log --graph --oneline --all
+  * <font color="#C4A000">59fa1ae (</font><font color="#34E2E2"><b>HEAD -&gt; </b></font><font color="#8AE234"><b>main</b></font><font color="#C4A000">, </font><font color="#EF2929"><b>origin/main</b></font><font color="#C4A000">)</font> first
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/UNIFIL</b></font>$ cd ../CASA/
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/CASA</b></font>$ git clone git@github.com:PablUoo/PablUoo-Atividade2_Marcelo-Yamamoto.git
+  Cloning into &apos;PablUoo-Atividade2_Marcelo-Yamamoto&apos;...
+  remote: Enumerating objects: 5, done.
+  remote: Counting objects: 100% (5/5), done.
+  remote: Compressing objects: 100% (5/5), done.
+  remote: Total 5 (delta 0), reused 5 (delta 0), pack-reused 0
+  Receiving objects: 100% (5/5), done.
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/CASA</b></font>$ ls
+  index.html  script.js  style.css
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/CASA</b></font>$ git branch Ramo1
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/CASA</b></font>$ git checkout Ramo1 
+  Switched to branch &apos;Ramo1&apos;
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/CASA</b></font>$ git status
+  No ramo Ramo1
+  Changes not staged for commit:
+    (utilize &quot;git add &lt;arquivo&gt;...&quot; para atualizar o que será submetido)
+    (use &quot;git restore &lt;file&gt;...&quot; to discard changes in working directory)
+  	<font color="#CC0000">modified:   index.html</font>
+  
+  nenhuma modificação adicionada à submissão (utilize &quot;git add&quot; e/ou &quot;git commit -a&quot;)
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/CASA</b></font>$ git add .
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/CASA</b></font>$ git commit -m &quot;PRIMEIRO NOME ALTERADO&quot;
+  [Ramo1 ebfd7d3] PRIMEIRO NOME ALTERADO
+   1 file changed, 1 insertion(+), 1 deletion(-)
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/CASA</b></font>$ git push origin Ramo1 
+  Enumerating objects: 5, done.
+  Counting objects: 100% (5/5), done.
+  Delta compression using up to 4 threads
+  Compressing objects: 100% (3/3), done.
+  Writing objects: 100% (3/3), 377 bytes | 377.00 KiB/s, done.
+  Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+  remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+  remote: 
+  remote: Create a pull request for &apos;Ramo1&apos; on GitHub by visiting:
+  remote:      https://github.com/PablUoo/PablUoo-Atividade2_Marcelo-Yamamoto/pull/new/Ramo1
+  remote: 
+  To github.com:PablUoo/PablUoo-Atividade2_Marcelo-Yamamoto.git
+   * [new branch]      Ramo1 -&gt; Ramo1
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/CASA</b></font>$ cd ../UNIFIL/
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/UNIFIL</b></font>$ git pull
+  remote: Enumerating objects: 5, done.
+  remote: Counting objects: 100% (5/5), done.
+  remote: Compressing objects: 100% (2/2), done.
+  remote: Total 3 (delta 1), reused 3 (delta 1), pack-reused 0
+  Unpacking objects: 100% (3/3), 357 bytes | 357.00 KiB/s, done.
+  From github.com:PablUoo/PablUoo-Atividade2_Marcelo-Yamamoto
+   * [new branch]      Ramo1      -&gt; origin/Ramo1
+  Already up to date.
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/UNIFIL</b></font>$ cd ../CASA/
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/CASA</b></font>$ git status
+  No ramo Ramo1
+  Changes not staged for commit:
+    (utilize &quot;git add &lt;arquivo&gt;...&quot; para atualizar o que será submetido)
+    (use &quot;git restore &lt;file&gt;...&quot; to discard changes in working directory)
+  	<font color="#CC0000">modified:   index.html</font>
+  
+  nenhuma modificação adicionada à submissão (utilize &quot;git add&quot; e/ou &quot;git commit -a&quot;)
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/CASA</b></font>$ git add .
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/CASA</b></font>$ git commit -m &quot;PRIMEIRO FILME ALTERADO&quot;
+  [Ramo1 502484a] PRIMEIRO FILME ALTERADO
+   1 file changed, 1 insertion(+), 1 deletion(-)
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/CASA</b></font>$ git push origin Ramo1
+  Enumerating objects: 5, done.
+  Counting objects: 100% (5/5), done.
+  Delta compression using up to 4 threads
+  Compressing objects: 100% (3/3), done.
+  Writing objects: 100% (3/3), 369 bytes | 369.00 KiB/s, done.
+  Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+  remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+  To github.com:PablUoo/PablUoo-Atividade2_Marcelo-Yamamoto.git
+     ebfd7d3..502484a  Ramo1 -&gt; Ramo1
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/CASA</b></font>$ cd ../UNIFIL/
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/UNIFIL</b></font>$ git pull
+  remote: Enumerating objects: 5, done.
+  remote: Counting objects: 100% (5/5), done.
+  remote: Compressing objects: 100% (2/2), done.
+  remote: Total 3 (delta 1), reused 3 (delta 1), pack-reused 0
+  Unpacking objects: 100% (3/3), 349 bytes | 349.00 KiB/s, done.
+  From github.com:PablUoo/PablUoo-Atividade2_Marcelo-Yamamoto
+     ebfd7d3..502484a  Ramo1      -&gt; origin/Ramo1
+  Already up to date.
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/UNIFIL</b></font>$ git branch
+  * <font color="#4E9A06">main</font>
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/UNIFIL</b></font>$ git status
+  No ramo main
+  Your branch is up to date with &apos;origin/main&apos;.
+  
+  Arquivos não monitorados:
+    (utilize &quot;git add &lt;arquivo&gt;...&quot; para incluir o que será submetido)
+  	<font color="#CC0000">Arquivo.txt</font>
+  
+  nada adicionado ao envio mas arquivos não registrados estão presentes (use &quot;git add&quot; to registrar)
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/UNIFIL</b></font>$ git add .
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/UNIFIL</b></font>$ git commit -m &quot;Arquivo.txt&quot;
+  [main da683dc] Arquivo.txt
+   1 file changed, 0 insertions(+), 0 deletions(-)
+   create mode 100644 Arquivo.txt
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/UNIFIL</b></font>$ git push origin main
+  Enumerating objects: 4, done.
+  Counting objects: 100% (4/4), done.
+  Delta compression using up to 4 threads
+  Compressing objects: 100% (2/2), done.
+  Writing objects: 100% (3/3), 351 bytes | 351.00 KiB/s, done.
+  Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+  To github.com:PablUoo/PablUoo-Atividade2_Marcelo-Yamamoto.git
+     59fa1ae..da683dc  main -&gt; main
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/UNIFIL</b></font>$ cd ../CASA/
+  </pre>
+  
+  <pre><font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/CASA</b></font>$ git checkout main 
+  Switched to branch &apos;main&apos;
+  Seu ramo está atrás de &apos;origin/main&apos; em 1 submissão, e pode ser avançado.
+    (use &quot;git pull&quot; to update your local branch)
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/CASA</b></font>$ git pull
+  Updating 59fa1ae..da683dc
+  Fast-forward
+   Arquivo.txt | 0
+   1 file changed, 0 insertions(+), 0 deletions(-)
+   create mode 100644 Arquivo.txt
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/CASA</b></font>$ ls
+  Arquivo.txt  index.html  script.js  style.css
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/CASA</b></font>$ git status
+  No ramo main
+  Your branch is up to date with &apos;origin/main&apos;.
+  
+  Arquivos não monitorados:
+    (utilize &quot;git add &lt;arquivo&gt;...&quot; para incluir o que será submetido)
+  	<font color="#CC0000">.gitignore</font>
+  
+  nada adicionado ao envio mas arquivos não registrados estão presentes (use &quot;git add&quot; to registrar)
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/CASA</b></font>$ git add .
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/CASA</b></font>$ git commit -m &quot;outroAquivo.doc ignore&quot;
+  [main 970e315] outroAquivo.doc ignore
+   1 file changed, 1 insertion(+)
+   create mode 100644 .gitignore
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/CASA</b></font>$ git push origin main
+  Enumerating objects: 4, done.
+  Counting objects: 100% (4/4), done.
+  Delta compression using up to 4 threads
+  Compressing objects: 100% (2/2), done.
+  Writing objects: 100% (3/3), 298 bytes | 298.00 KiB/s, done.
+  Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+  remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+  To github.com:PablUoo/PablUoo-Atividade2_Marcelo-Yamamoto.git
+     da683dc..970e315  main -&gt; main
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/CASA</b></font>$ git status
+  No ramo main
+  Your branch is up to date with &apos;origin/main&apos;.
+  
+  Changes not staged for commit:
+    (utilize &quot;git add &lt;arquivo&gt;...&quot; para atualizar o que será submetido)
+    (use &quot;git restore &lt;file&gt;...&quot; to discard changes in working directory)
+  	<font color="#CC0000">modified:   index.html</font>
+  
+  nenhuma modificação adicionada à submissão (utilize &quot;git add&quot; e/ou &quot;git commit -a&quot;)
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/CASA</b></font>$ git add .
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/CASA</b></font>$ git commit -m &quot;SEGUNDO NOME DA LISTA&quot;
+  [main 171b0d6] SEGUNDO NOME DA LISTA
+   1 file changed, 1 insertion(+), 1 deletion(-)
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/CASA</b></font>$ git push origin main
+  Enumerating objects: 5, done.
+  Counting objects: 100% (5/5), done.
+  Delta compression using up to 4 threads
+  Compressing objects: 100% (3/3), done.
+  Writing objects: 100% (3/3), 319 bytes | 319.00 KiB/s, done.
+  Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+  remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+  To github.com:PablUoo/PablUoo-Atividade2_Marcelo-Yamamoto.git
+     970e315..171b0d6  main -&gt; main
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/CASA</b></font>$ git pull
+  Already up to date.
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/CASA</b></font>$ git status
+  No ramo main
+  Your branch is up to date with &apos;origin/main&apos;.
+  
+  Changes not staged for commit:
+    (utilize &quot;git add &lt;arquivo&gt;...&quot; para atualizar o que será submetido)
+    (use &quot;git restore &lt;file&gt;...&quot; to discard changes in working directory)
+  	<font color="#CC0000">modified:   index.html</font>
+  
+  nenhuma modificação adicionada à submissão (utilize &quot;git add&quot; e/ou &quot;git commit -a&quot;)
+  </pre>
+  <pre><font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/CASA</b></font>$ git add .
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/CASA</b></font>$ git commit -m &quot;HULK&quot;
+  [main 90c0a8d] HULK
+   1 file changed, 1 insertion(+), 1 deletion(-)
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/CASA</b></font>$ git push origin main
+  Enumerating objects: 5, done.
+  Counting objects: 100% (5/5), done.
+  Delta compression using up to 4 threads
+  Compressing objects: 100% (3/3), done.
+  Writing objects: 100% (3/3), 300 bytes | 300.00 KiB/s, done.
+  Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+  remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+  To github.com:PablUoo/PablUoo-Atividade2_Marcelo-Yamamoto.git
+     171b0d6..90c0a8d  main -&gt; main
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/CASA</b></font>$ cd ../UNIFIL/
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/UNIFIL</b></font>$ git status
+  No ramo main
+  Your branch is up to date with &apos;origin/main&apos;.
+  
+  Changes not staged for commit:
+    (utilize &quot;git add &lt;arquivo&gt;...&quot; para atualizar o que será submetido)
+    (use &quot;git restore &lt;file&gt;...&quot; to discard changes in working directory)
+  	<font color="#CC0000">modified:   index.html</font>
+  
+  nenhuma modificação adicionada à submissão (utilize &quot;git add&quot; e/ou &quot;git commit -a&quot;)
+  </pre>
+  <pre><font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/UNIFIL</b></font>$ git add .
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/UNIFIL</b></font>$ git commit -m &quot;LOKI&quot;
+  [detached HEAD f8997a1] LOKI
+   1 file changed, 1 insertion(+), 1 deletion(-)
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/UNIFIL</b></font>$ git push origin main
+  Enumerating objects: 5, done.
+  Counting objects: 100% (5/5), done.
+  Delta compression using up to 4 threads
+  Compressing objects: 100% (3/3), done.
+  Writing objects: 100% (3/3), 298 bytes | 298.00 KiB/s, done.
+  Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+  remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+  To github.com:PablUoo/PablUoo-Atividade2_Marcelo-Yamamoto.git
+   + 90c0a8d...7e25451 main -&gt; main
+  </pre>
+  <pre><font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/UNIFIL</b></font>$ git log --oneline
+  <font color="#C4A000">f8997a1 (</font><font color="#34E2E2"><b>HEAD</b></font><font color="#C4A000">)</font> LOKI
+  <font color="#C4A000">90c0a8d</font> HULK
+  <font color="#C4A000">171b0d6</font> SEGUNDO NOME DA LISTA
+  <font color="#C4A000">970e315</font> outroAquivo.doc ignore
+  <font color="#C4A000">da683dc</font> Arquivo.txt
+  <font color="#C4A000">59fa1ae</font> first
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/UNIFIL</b></font>$ git log
+  <font color="#C4A000">commit f8997a117394fc1aed1fa2640f9648870d12dcdf (</font><font color="#34E2E2"><b>HEAD</b></font><font color="#C4A000">)</font>
+  Author: PablUoo &lt;pabloaurelio1163@gmail.com&gt;
+  Date:   Wed Nov 15 16:44:45 2023 -0300
+  
+      LOKI
+  
+  <font color="#C4A000">commit 90c0a8db79a4a920c5c347d0dec80cd8c9aafa59</font>
+  Author: PablUoo &lt;pabloaurelio1163@gmail.com&gt;
+  Date:   Wed Nov 15 16:38:59 2023 -0300
+  
+      HULK
+  
+  <font color="#C4A000">commit 171b0d60decca7fa4b16f87e364bdbae2f953174</font>
+  Author: PablUoo &lt;pabloaurelio1163@gmail.com&gt;
+  Date:   Wed Nov 15 16:35:11 2023 -0300
+  
+      SEGUNDO NOME DA LISTA
+  
+  <font color="#C4A000">commit 970e315a32127fde0d67fe7873176e171498ec8e</font>
+  Author: PablUoo &lt;pabloaurelio1163@gmail.com&gt;
+  Date:   Wed Nov 15 16:34:18 2023 -0300
+  
+      outroAquivo.doc ignore
+  
+  <font color="#C4A000">commit da683dccfe97e9ae7d04e27188d6099054fc73eb</font>
+  Author: PablUoo &lt;pabloaurelio1163@gmail.com&gt;
+  Date:   Wed Nov 15 16:29:51 2023 -0300
+  
+      Arquivo.txt
+  
+  <font color="#C4A000">commit 59fa1ae307fcd167dedd5dbb2dbfe6f34bc3c8ef</font>
+  Author: PablUoo &lt;pabloaurelio1163@gmail.com&gt;
+  Date:   Wed Nov 15 16:23:21 2023 -0300
+  
+      first
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/UNIFIL</b></font>$ git log -p
+  <font color="#C4A000">commit f8997a117394fc1aed1fa2640f9648870d12dcdf (</font><font color="#34E2E2"><b>HEAD</b></font><font color="#C4A000">)</font>
+  Author: PablUoo &lt;pabloaurelio1163@gmail.com&gt;
+  Date:   Wed Nov 15 16:44:45 2023 -0300
+  
+      LOKI
+  
+  <b>diff --git a/index.html b/index.html</b>
+  <b>index a9d3389..715c99f 100644</b>
+  <b>--- a/index.html</b>
+  <b>+++ b/index.html</b>
+  <font color="#06989A">@@ -24,7 +24,7 @@</font>
+           &lt;label&gt;Filmes:&lt;/label&gt;
+           &lt;ul id=&quot;listaFilmes&quot;&gt;
+               &lt;li&gt;Titanic&lt;/li&gt;
+  <font color="#CC0000">-            &lt;li&gt;HULK&lt;/li&gt;</font>
+  <font color="#4E9A06">+            &lt;li&gt;LOKI&lt;/li&gt;</font>
+               &lt;li&gt;Matrix&lt;/li&gt;
+               &lt;li&gt;Inception&lt;/li&gt;
+               &lt;li&gt;Interstellar&lt;/li&gt;
+  
+  <font color="#C4A000">commit 90c0a8db79a4a920c5c347d0dec80cd8c9aafa59</font>
+  Author: PablUoo &lt;pabloaurelio1163@gmail.com&gt;
+  Date:   Wed Nov 15 16:38:59 2023 -0300
+  
+      HULK
+  
+  <b>diff --git a/index.html b/index.html</b>
+  <b>index 5b6061d..a9d3389 100644</b>
+  <b>--- a/index.html</b>
+  <b>+++ b/index.html</b>
+  <font color="#06989A">@@ -24,7 +24,7 @@</font>
+           &lt;label&gt;Filmes:&lt;/label&gt;
+           &lt;ul id=&quot;listaFilmes&quot;&gt;
+               &lt;li&gt;Titanic&lt;/li&gt;
+  <font color="#CC0000">-            &lt;li&gt;Gladiador&lt;/li&gt;</font>
+  <font color="#4E9A06">+            &lt;li&gt;HULK&lt;/li&gt;</font>
+               &lt;li&gt;Matrix&lt;/li&gt;
+               &lt;li&gt;Inception&lt;/li&gt;
+               &lt;li&gt;Interstellar&lt;/li&gt;
+  
+  <font color="#C4A000">commit 171b0d60decca7fa4b16f87e364bdbae2f953174</font>
+  Author: PablUoo &lt;pabloaurelio1163@gmail.com&gt;
+  Date:   Wed Nov 15 16:35:11 2023 -0300
+  
+      SEGUNDO NOME DA LISTA
+  
+  <b>diff --git a/index.html b/index.html</b>
+  <b>index 945713e..5b6061d 100644</b>
+  <b>--- a/index.html</b>
+  <b>+++ b/index.html</b>
+  <font color="#06989A">@@ -14,7 +14,7 @@</font>
+           &lt;label&gt;Nomes:&lt;/label&gt;
+           &lt;ul id=&quot;listaPessoas&quot;&gt;
+               &lt;li&gt;BIA&lt;/li&gt;
+  <font color="#CC0000">-            &lt;li&gt;Maria&lt;/li&gt;</font>
+  <font color="#4E9A06">+            &lt;li&gt;Cassandra&lt;/li&gt;</font>
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/UNIFIL</b></font>$ git branch Ramo2
+  </pre>
+  <pre><font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/UNIFIL</b></font>$ git checkout Ramo2
+  Switched to branch &apos;Ramo2&apos;
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/UNIFIL</b></font>$ git status
+  No ramo Ramo2
+  Last command done (1 command done):
+     pick 7e25451 LOKI
+  No commands remaining.
+  You are currently editing a commit while rebasing branch &apos;main&apos; on &apos;90c0a8d&apos;.
+    (utilize &quot;git commit --amend&quot; para emendar a atual submissão)
+    (use &quot;git rebase --continue&quot; assim que você estiver satisfeitos com as mudanças)
+  
+  Changes not staged for commit:
+    (utilize &quot;git add &lt;arquivo&gt;...&quot; para atualizar o que será submetido)
+    (use &quot;git restore &lt;file&gt;...&quot; to discard changes in working directory)
+  	<font color="#CC0000">modified:   index.html</font>
+  
+  nenhuma modificação adicionada à submissão (utilize &quot;git add&quot; e/ou &quot;git commit -a&quot;)
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/UNIFIL</b></font>$ git add .
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/UNIFIL</b></font>$ git commit -m &quot;Matix 2&quot;
+  [Ramo2 dff85d0] Matix 2
+   1 file changed, 1 insertion(+), 1 deletion(-)
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/UNIFIL</b></font>$ git push origin Ramo2 
+  Enumerating objects: 17, done.
+  Counting objects: 100% (17/17), done.
+  Delta compression using up to 4 threads
+  Compressing objects: 100% (14/14), done.
+  Writing objects: 100% (15/15), 1.35 KiB | 345.00 KiB/s, done.
+  Total 15 (delta 8), reused 0 (delta 0), pack-reused 0
+  remote: Resolving deltas: 100% (8/8), completed with 1 local object.
+  remote: 
+  remote: Create a pull request for &apos;Ramo2&apos; on GitHub by visiting:
+  remote:      https://github.com/PablUoo/PablUoo-Atividade2_Marcelo-Yamamoto/pull/new/Ramo2
+  remote: 
+  To github.com:PablUoo/PablUoo-Atividade2_Marcelo-Yamamoto.git
+   * [new branch]      Ramo2 -&gt; Ramo2
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/UNIFIL</b></font>$ git status
+  No ramo Ramo2
+  Last command done (1 command done):
+     pick 7e25451 LOKI
+  No commands remaining.
+  You are currently editing a commit while rebasing branch &apos;main&apos; on &apos;90c0a8d&apos;.
+    (utilize &quot;git commit --amend&quot; para emendar a atual submissão)
+    (use &quot;git rebase --continue&quot; assim que você estiver satisfeitos com as mudanças)
+  
+  Changes not staged for commit:
+    (utilize &quot;git add &lt;arquivo&gt;...&quot; para atualizar o que será submetido)
+    (use &quot;git restore &lt;file&gt;...&quot; to discard changes in working directory)
+  	<font color="#CC0000">modified:   index.html</font>
+  
+  nenhuma modificação adicionada à submissão (utilize &quot;git add&quot; e/ou &quot;git commit -a&quot;)
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/UNIFIL</b></font>$ git add .
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/UNIFIL</b></font>$ git commit -m &quot;COBOL&quot;
+  [Ramo2 54bd0d9] COBOL
+   1 file changed, 1 insertion(+)
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/UNIFIL</b></font>$ git push origin Ramo2 
+  Enumerating objects: 5, done.
+  Counting objects: 100% (5/5), done.
+  Delta compression using up to 4 threads
+  Compressing objects: 100% (3/3), done.
+  Writing objects: 100% (3/3), 301 bytes | 301.00 KiB/s, done.
+  Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+  remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+  To github.com:PablUoo/PablUoo-Atividade2_Marcelo-Yamamoto.git
+     dff85d0..54bd0d9  Ramo2 -&gt; Ramo2
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/UNIFIL</b></font>$ git checkout main 
+  Switched to branch &apos;main&apos;
+  Your branch is up to date with &apos;origin/main&apos;.
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/UNIFIL</b></font>$ git merge Ramo2 
+  Mesclagem automática de index.html
+  CONFLITO (conteúdo): conflito de mesclagem em index.html
+  Automatic merge failed; fix conflicts and then commit the result.
+  <font color="#8AE234"><b>pablo@linux</b></font>:<font color="#729FCF"><b>~/Documentos/Atividade/UNIFIL</b></font>$ git merge Ramo2 
+  Already up to date.
+  </pre>
+    </l>
+  </body>
 </html>
